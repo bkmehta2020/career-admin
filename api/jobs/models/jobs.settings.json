@@ -11,31 +11,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "job_title": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true
     },
-    "place": {
-      "type": "enumeration",
-      "enum": [
-        "California",
-        "Ontario",
-        "Mumbai"
-      ]
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     },
-    "opening_date": {
-      "type": "date"
-    },
-    "department": {
-      "type": "enumeration",
-      "enum": [
-        "Installations",
-        "Direct_Sales",
-        "Retail_Strategy",
-        "Marketing"
-      ]
-    },
-    "experience": {
-      "type": "string"
+    "details": {
+      "type": "richtext"
     }
   }
 }
